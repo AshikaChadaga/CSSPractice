@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Position Property</title>
+    <style>
+        body {
+            font-size: 20px;
+            min-height: 3000px;
+        }
+
+        .static {
+            position: static;
+            background-color: lightpink;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .relative {
+            position: relative;
+            left: 30px;
+            top: 30px;
+            height: 200px;
+            background-color: lightskyblue;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 80px;
+            left: 30px;
+            height: 100px;
+            background-color: lightyellow;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: lightseagreen;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0px;
+            padding: 20px;
+            background-color: yellowgreen;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS Position Property</h2>
+
+    <p></p>
+
+    <div class="static">
+        STATIC - An element with position static is always positioned according to the normal flow of the page
+    </div>
+
+    <div class="relative">
+        RELATIVE - An element with position relative is positioned relative to its normal position
+        <div class="absolute">ABSOLUTE - An element with position absolute is positioned relative to the nearest
+            positioned ancestor</div>
+    </div>
+
+    <div class="fixed">
+        FIXED - An element with position fixed is positioned relative to the viewport. It always stays in the same place
+        even if the page is scrolled
+    </div>
+
+    <div class="sticky">STICKY - The sticky element sticks to the top of the page (top: 0), when you reach its scroll
+        position.
+    </div>
+
+</body>
+
+</html>

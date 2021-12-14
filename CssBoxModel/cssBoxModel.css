@@ -1,0 +1,18 @@
+body{
+    margin: 0px;
+}
+
+.heading{
+    margin-left: 50px;
+}
+
+.element{
+    text-align: justify;
+    background-color: lightsalmon;
+    font-size: 20px;
+    font-weight: 200;
+    max-width: 1000px;
+    margin: 50px;
+    border: 15px solid black;
+    padding: 50px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .animation {
+            width: 200px;
+            height: 200px;
+            background-color: maroon;
+            position: relative;
+            animation-name: changingSquare;
+            animation-duration: 5s;
+            /* animation-delay: 2s; */
+            /* animation-delay: -2s; */
+            animation-iteration-count: infinite;
+            /* animation-iteration-count: 3; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            animation-direction: alternate-reverse;
+            margin-bottom: 300px;
+        }
+
+        @keyframes changingSquare {
+            0% {
+                background-color: maroon;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: royalblue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: darkgreen;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: maroon;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .timing-div {
+            width: 90px;
+            height: 90px;
+            background-color: lightskyblue;
+            font-weight: bold;
+            position: relative;
+            animation: animationTiming 5s infinite;
+            padding: 10px;
+        }
+
+        #div1 {
+            animation-timing-function: linear;
+        }
+
+        #div2 {
+            animation-timing-function: ease;
+        }
+
+        #div3 {
+            animation-timing-function: ease-in;
+        }
+
+        #div4 {
+            animation-timing-function: ease-out;
+        }
+
+        #div5 {
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes animationTiming {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Animation</h1>
+
+    <div class="animation"></div>
+
+    <h1>CSS Animation-Timing-Function</h1>
+
+    <div class="timing-div" id="div1">linear</div>
+    <div class="timing-div" id="div2">ease</div>
+    <div class="timing-div" id="div3">ease-in</div>
+    <div class="timing-div" id="div4">ease-out</div>
+    <div class="timing-div" id="div5">ease-in-out</div>
+
+</body>
+
+</html>
